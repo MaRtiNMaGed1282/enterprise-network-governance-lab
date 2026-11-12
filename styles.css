@@ -7,3 +7,10 @@ main{max-width:1380px;margin:auto;padding:34px clamp(15px,4vw,58px) 38px;min-hei
 @media(max-width:920px){.masthead{flex-wrap:wrap;gap:8px}.masthead nav{order:3;flex-basis:100%}.workspace,.detail-grid{grid-template-columns:minmax(0,1fr) 235px}.sim-layout{grid-template-columns:200px minmax(0,1fr)}}
 @media(max-width:680px){main{padding-top:22px}.workspace,.sim-layout,.detail-grid{grid-template-columns:1fr}.diagram{min-height:305px}.intro{align-items:flex-start;flex-direction:column}.scorecards,.facts{grid-template-columns:1fr}.masthead nav a{font-size:12px;padding:6px 8px}.panel{padding:12px}.node{min-height:55px}.scenario-panel #scenario-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}.scenario{margin:0}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.cell-detail{display:block;color:var(--muted);margin-top:4px;font-size:11px}
+.raci-grid table{min-width:1060px}.raci-grid th:first-child,.raci-grid td:first-child{min-width:240px}.raci-grid td:not(:first-child),.raci-grid th:not(:first-child){text-align:center}
+.raci-R,.raci-A,.raci-C,.raci-I{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:6px;font:700 13px ui-monospace,monospace}
+.raci-R{background:#244a3b;color:#acffd8}.raci-A{background:#193e51;color:#b3e8ff}.raci-C{background:#493c2b;color:#ffe0a8}.raci-I{background:#353849;color:#e1dbff}
+.metric a{display:inline-block;font-size:12px;margin-top:10px}.followup{margin-top:10px}.exercise-facts{margin:10px 0}.exercise fieldset{border:1px solid var(--line);padding:9px 12px;margin:10px 0;border-radius:7px}.exercise fieldset label{display:block;margin:4px 0}.exercise input{accent-color:var(--mint)}.exercise-result p{margin-top:6px}
+.risk-form label{display:block;margin:8px 0}.risk-form select,.risk-form input,.risk-form textarea{display:block;width:100%;max-width:100%;background:#131b1e;color:var(--text);border:1px solid var(--line);border-radius:7px;padding:7px 9px;font:inherit}.risk-form .facts{margin-top:6px}
+@media(max-width:420px){.node{width:55px}}

@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="محاكاة تعليمية لشبكة مؤسسة تربط اختبار الضوابط بالأدلة والمسؤوليات ومؤشرات الأداء.">
   <title>معمل حوكمة الشبكة</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="lab-data.js" defer></script>
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="lab-data.js?v=2" defer></script>
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -18,6 +18,7 @@
       <a href="#simulation" data-page="simulation">المحاكاة</a>
       <a href="#controls" data-page="controls">الضوابط والأدلة</a>
       <a href="#scorecard" data-page="scorecard">لوحة المؤشرات</a>
+      <a href="#course" data-page="course">تمارين الدورة</a>
     </nav>
     <span class="mode"><i></i> بيئة تدريبية</span>
   </header>
@@ -38,6 +39,10 @@
     <section id="view-scorecard" class="view" hidden>
       <div class="intro"><div><p class="eyebrow">متابعة الأداء</p><h1>لوحة مؤشرات الضوابط</h1><p>راجع نتائج الاختبارات وتغطية الأدلة، ثم حدّد الإجراء المطلوب.</p></div><a href="#simulation" class="primary">العودة للمحاكاة <span aria-hidden="true">←</span></a></div>
       <div id="scorecard-stage"></div>
+    </section>
+    <section id="view-course" class="view" hidden>
+      <div class="intro"><div><p class="eyebrow">تمارين تطبيقية</p><h1>تمارين الدورة وسجل المخاطر</h1><p>طبّق خطوات الحوكمة على أدلة من شبكة المؤسسة نفسها.</p></div></div>
+      <div id="course-stage"></div>
     </section>
   </main>
   <footer><span>معمل حوكمة الشبكة</span><span>محاكاة محلية ببيانات تدريبية</span></footer>
