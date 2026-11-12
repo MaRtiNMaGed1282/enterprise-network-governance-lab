@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="محاكاة تعليمية لشبكة مؤسسة تربط اختبار الضوابط بالأدلة والمسؤوليات ومؤشرات الأداء.">
+  <title>معمل حوكمة الشبكة</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="lab-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+  <header class="masthead">
+    <div class="identity"><span class="brand-mark" aria-hidden="true">◎</span><div><strong>معمل حوكمة الشبكة</strong><small>Enterprise Network Governance Lab</small></div></div>
+    <nav aria-label="أقسام المعمل">
+      <a href="#network" data-page="network">الشبكة</a>
+      <a href="#simulation" data-page="simulation">المحاكاة</a>
+      <a href="#controls" data-page="controls">الضوابط والأدلة</a>
+      <a href="#scorecard" data-page="scorecard">لوحة المؤشرات</a>
+    </nav>
+    <span class="mode"><i></i> بيئة تدريبية</span>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="view-network" class="view">
+      <div class="intro"><div><p class="eyebrow">تصميم الشبكة</p><h1>شبكة المؤسسة</h1><p>استكشف مكوّنات الشبكة ومساراتها، ثم اختبر قرارات الوصول في المحاكاة.</p></div><a href="#simulation" class="primary">ابدأ المحاكاة <span aria-hidden="true">←</span></a></div>
+      <div id="network-stage" class="workspace"></div>
+    </section>
+    <section id="view-simulation" class="view" hidden>
+      <div class="intro"><div><p class="eyebrow">محاكاة الاتصالات</p><h1>اختبر مسار الاتصال</h1><p>اختَر حالة، حدّد توقعك، وقارن النتيجة بسجل الاتصال.</p></div><button type="button" class="quiet" id="reset">إعادة ضبط الجولة</button></div>
+      <div class="sim-layout"><div class="panel scenario-panel"><h2>الحالات التدريبية</h2><div id="scenario-list"></div></div><div id="simulation-stage"></div></div>
+      <div class="panel evidence-panel"><div class="panel-heading"><div><h2>سجل الأدلة</h2><p>نتائج الاختبارات المنفّذة في هذه الجولة</p></div><a href="#scorecard">عرض المؤشرات ←</a></div><div id="evidence"></div></div>
+    </section>
+    <section id="view-controls" class="view" hidden>
+      <div class="intro"><div><p class="eyebrow">الحوكمة</p><h1>الضوابط والأدلة</h1><p>اربط مسار الاتصال بالخطر والسياسة والإجراء والدليل والمسؤوليات.</p></div></div>
+      <div id="controls-stage"></div>
+    </section>
+    <section id="view-scorecard" class="view" hidden>
+      <div class="intro"><div><p class="eyebrow">متابعة الأداء</p><h1>لوحة مؤشرات الضوابط</h1><p>راجع نتائج الاختبارات وتغطية الأدلة، ثم حدّد الإجراء المطلوب.</p></div><a href="#simulation" class="primary">العودة للمحاكاة <span aria-hidden="true">←</span></a></div>
+      <div id="scorecard-stage"></div>
+    </section>
+  </main>
+  <footer><span>معمل حوكمة الشبكة</span><span>محاكاة محلية ببيانات تدريبية</span></footer>
+  <template id="map-template">
+    <div class="panel topology"><div class="panel-heading"><div><h2>خريطة الشبكة</h2><p>حدد أي مكوّن لعرض تفاصيله.</p></div><span class="topology-label" dir="ltr"></span></div>
+    <div class="diagram" dir="ltr"><canvas aria-hidden="true"></canvas><div class="nodes"></div></div>
+    <div class="legend"><span><i class="mark cyan"></i> مسار الاتصال</span><span><i class="mark green"></i> سماح</span><span><i class="mark amber"></i> منع أو دليل ناقص</span></div></div>
+  </template>
+</body>
+</html>
