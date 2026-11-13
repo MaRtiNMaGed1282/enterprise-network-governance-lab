@@ -1,22 +1,22 @@
 # Enterprise Network Governance Lab
 
-An Arabic, browser-based training exercise on ISO/IEC 27001:2022 Annex A **A.8.22 Segregation of networks**. Database connectivity is one test of network segregation. Application and database permissions are assessed separately under the relevant information access controls.
+Arabic browser-based training on ISO/IEC 27001:2022 Annex A.8.22 (Segregation of networks) and A.8.3 (Information access restriction). Traffic, changes, and evidence are simulated locally.
+
+**Academic review and training guidance: Eng. Sara Fathy El Refaey (المهندسة سارة فتحي الرفاعي).**
 
 ## Run
 
-Open `index.html` in a browser or visit the [GitHub Pages deployment](https://martinmaged1282.github.io/enterprise-network-governance-lab/). No installation or build step is required. All traffic and evidence are simulated.
+Visit the [GitHub Pages lab](https://martinmaged1282.github.io/enterprise-network-governance-lab/) or open `index.html`. No installation or build is required.
 
-1. Inspect the network zones and approved communications matrix.
-2. Predict and run six traffic tests. Compare approved and observed outcomes and inspect the evidence.
-3. Run the approved remediation exercise for T-03. The retest retains the original adverse evidence.
-4. Review the policy, procedure, named controls, and role-by-activity RACI.
-5. Open the KPI drill-down and work through the risk, NIST profile, and four evidence-based decisions.
-
-The six baseline tests produce 4/5 conclusive matches (80%) and 5/6 evidence coverage (83%). The T-03 retest raises the match rate to 100% at the same coverage. T-04 remains inconclusive and the risk stays open pending review. Progress and risk drafts are stored in the browser.
+1. Run six FW-BASE traffic cases. They yield 4/5 conclusive matches (80%) and 5/6 evidence coverage (83%).
+2. Follow CHG-021 from request to approval and implementation. Classify the evidence and complete the workflow RACI, including residual-risk authority.
+3. Run verification on FW-REV2. RT-03 establishes remediation for that path. Revision-wide verification requires all six new records. The original evidence remains visible.
+4. Test four application access decisions under A.8.3. All four use the same network path. The application evaluates each user's action against the approved policy. Inspect the evidence, RACI, and separate KPIs.
+5. Document the course outputs in the final submission and download the evidence-linked Markdown package. Progress and drafts stay in the browser.
 
 ## References
 
-- [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) and [ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) for the ISMS requirements and control guidance.
-- [NIST CSF 2.0](https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20) and [SP 1301](https://csrc.nist.gov/pubs/sp/1301/final) for outcomes and organizational profiles.
-- [NIST SP 800-53A Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) as a reference for structuring assessment evidence.
-- [Smartsheet RACI examples](https://www.smartsheet.com/content/raci-templates-powerpoint) and [BSC Designer Cybersecurity Balanced Scorecard](https://bscdesigner.com/cybersecurity-strategy.htm) as layout and measurement references.
+- [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) and [ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html)
+- [NIST CSF 2.0](https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20) and [SP 1301](https://csrc.nist.gov/pubs/sp/1301/final)
+- [NIST SP 800-53A Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final)
+- [Smartsheet RACI examples](https://www.smartsheet.com/content/raci-templates-powerpoint) and [BSC Designer Cybersecurity Balanced Scorecard](https://bscdesigner.com/cybersecurity-strategy.htm)

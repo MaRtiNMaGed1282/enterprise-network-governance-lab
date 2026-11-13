@@ -14,3 +14,12 @@ main{max-width:1380px;margin:auto;padding:34px clamp(15px,4vw,58px) 38px;min-hei
 .metric a{display:inline-block;font-size:12px;margin-top:10px}.followup{margin-top:10px}.exercise-facts{margin:10px 0}.exercise fieldset{border:1px solid var(--line);padding:9px 12px;margin:10px 0;border-radius:7px}.exercise fieldset label{display:block;margin:4px 0}.exercise input{accent-color:var(--mint)}.exercise-result p{margin-top:6px}
 .risk-form label{display:block;margin:8px 0}.risk-form select,.risk-form input,.risk-form textarea{display:block;width:100%;max-width:100%;background:#131b1e;color:var(--text);border:1px solid var(--line);border-radius:7px;padding:7px 9px;font:inherit}.risk-form .facts{margin-top:6px}
 @media(max-width:420px){.node{width:55px}}
+
+.workflow-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;list-style:none;padding:0;margin:14px 0}
+.workflow-steps li,.record{padding:10px 12px;background:#192327;border:1px solid var(--line);border-radius:8px}
+.workflow-steps small,.record small{display:block;color:var(--teal)}
+.record-list{display:grid;gap:8px;margin-top:11px}.record summary{cursor:pointer}.record p{margin:6px 0}
+.proof-options{display:grid;gap:3px}.risk-form fieldset{border:1px solid var(--line);border-radius:8px;margin:10px 0;padding:10px 12px}
+.risk-form input[type=checkbox]{display:inline;width:auto;accent-color:var(--mint)}
+#workflow-raci select{min-width:124px}#revision-select{background:var(--raised);color:var(--text);border:1px solid var(--line);padding:4px}
+@media(max-width:680px){.workflow-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
